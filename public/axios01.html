@@ -14,29 +14,6 @@
     <button id="but4">修改一个人</button>
     <button id="but5">删除一个人</button>
     <script>
-        $('#but1').click(async() =>{
-            let result = await axios.get('/get_persons')
-            console.log(result.data);
-        })  
-
-        $('#but2').click(async() =>{
-            let result = await axios.get('/get_person_byid',{params:{id:1}})
-            console.log(result.data);
-        })
-        $('#but3').click(async() =>{
-            let result = await axios.post('/person','name=海峰&age=30')
-            console.log(result.data)
-        })
-        $('#but4').click(async() =>{
-            let result = await axios.put('/person',{id:4,name:'tom',age:50})
-            console.log(result.data)
-        })
-
-        $('#but5').click(async() =>{
-            let result = await axios.delete('/person/4')
-            console.log(result.data)
-        })
-
     </script>
 
 </body>
