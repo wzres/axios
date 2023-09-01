@@ -82,14 +82,6 @@ app.get('/test',(req,res) =>{
 app.listen(3000,(err)=>{
 	if(!err) {
 		console.log('测试axios页面为：http://localhost:3000/axios01.html');
-		console.log('测试axios页面为：http://localhost:3000/axios7.html');
-		console.log('测试axios页面为：http://localhost:3000/axios.html');
-		console.log('测试axios页面为：http://localhost:3000/axios基本使用.html');
-		console.log('测试axios页面为：http://localhost:3000/axios_await.html');
-		console.log('测试axios页面为：http://localhost:3000/axios.create.html');
-		console.log('测试axios页面为：http://localhost:3000/wztest.html');
-		console.log('测试axios页面为：http://localhost:3000/wzTest.html');
-		console.log('测试axios页面为：http://localhost:3000/axios10.html');
 	}
 	else console.log(err);
 })
