@@ -1,8 +1,12 @@
 const express = require('express')
 
 const app = express()
+//解析urlencoded编码
 app.use(express.urlencoded({extended:true}))
+//解析json编码
 app.use(express.json())
+
+//暴露静态资源
 app.use(express.static(__dirname+'/public'))
 
 //初始化一个用于保存人的数组
