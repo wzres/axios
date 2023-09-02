@@ -9,14 +9,25 @@
     <script src="https://cdn.bootcdn.net/ajax/libs/axios/1.3.6/axios.js"></script>
 </head>
 <body>
-    <button id="but1">查询所有人</button>
-    <button id="but2">查询一个人</button>
-    <button id="but3">新增一个人</button>
-    <button id="but4">修改一个人</button>
-    <button id="but5">删除一个人</button>
+    <select name="grade" id="but0">
+        <option>请选择id</option>
+    	<option value="1">1</option>
+		<option value='2'>2</option>  
+		<option value='3'>3</option>  
+	</select>
+    用户名<input id="name" type="text">
+    密码<input id="word" type="text"><br><br>
+    <button id="but1">query参数</button>
+    <button id="but2">query参数(封装user)</button>
+    <button id="but3">请求体参数(URL)</button>
+    <button id="but4">请求体参数(JSON)</button>
+    <button id="but5">请求体参数(JSON集合)</button>
+    <button id="but5">路由参数</button>
+    <button id="but5">路由参数(多参)</button><br>
     <script>
         // 默认基础配置
-        axios.defaults.baseURL = 'http://localhost:3000';
+        axios.defaults.baseURL = 'http://localhost:8080';
+
     </script>
 
 </body>
